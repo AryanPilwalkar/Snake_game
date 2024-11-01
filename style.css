@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #00c853;
+    margin-bottom: 10px;
+}
+
+#highest-score {
+    margin-bottom: 20px;
+}
+
+#gameCanvas {
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: grid;
+    grid-template-areas:
+        ". up ."
+        "left . right"
+        ". down .";
+    gap: 5px;
+}
+
+.control-btn {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#up-btn { grid-area: up; }
+#left-btn { grid-area: left; }
+#right-btn { grid-area: right; }
+#down-btn { grid-area: down; }
